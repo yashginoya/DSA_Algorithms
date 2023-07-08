@@ -1,5 +1,6 @@
 // single source shortest path algo
 // TC = O(NlogN + MlogN)     or    O(VlogV + ElogV)       ~~~   O(ElogV)
+// here for 1 base indexing pass n+1 instead of n while calling function 
 
 void dijkstra(int source,int n,vector<int> &dist,vector<int> &parent,vector<vector<pair<int,int>>> &adj){
     dist.assign(n,INF);
