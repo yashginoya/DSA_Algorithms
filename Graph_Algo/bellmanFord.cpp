@@ -1,5 +1,6 @@
 // single source shortest path algo
 // TC = O(N*M)     or     O(V*E) 
+// here for 1 base indexing pass n+1 instead of n while calling function 
 
 void bellmanFord(int source,int n,vector<int> &dist,vector<int> &parent,vector<vector<pair<int,int>>> &adj,set<int> &negCycle){
     // fill(all(dist),INF);
