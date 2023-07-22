@@ -10,7 +10,9 @@ struct FenwickTree {
     int n;
     vector<int> bit;
 
-    FenwickTree(vector<int> &a) : n(size(a)), bit(n + 1) {
+    FenwickTree(vector<int> &a) {
+        n = a.size();
+        bit.resize(n+1,0);
         for (int i = 0; i < n; i++) update(i, a[i]);
     }
 
